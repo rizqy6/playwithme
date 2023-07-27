@@ -61,7 +61,7 @@ $top_songs = get_top_songs($conn);
 	<!-- Artists -->
 	<ul class="list-group  mt-5 mb-5">
 	  <li class="list-group-item">
-		<h2 class="display-4">Africa Top Artists</h2>
+		<h2 class="display-4">Top Artists</h2>
 	  </li>
 	 <li class="list-group-item">
 
