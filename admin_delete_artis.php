@@ -12,13 +12,13 @@
 
 	
 	$sql_songs = "DELETE FROM songs WHERE aritst_id = '$artist_id'";
-	$conn->mysqli_query($sql_songs);
+	$conn->query($sql_songs);
 
 	$sql_artist = "DELETE FROM artist WHERE artist_id = '$artist_id'";
-	$conn->mysqli_query($sql_artist);
+	$conn->query($sql_artist);
 
-	if($conn->mysqli_query($sql)){
-		message("The artist was deleted successfully.","success"); 
+	if($conn->query($sql)){
+		message("The artist was deleted successfully.","success");
 	}else{ 
 		message("Something went wrong while deleting the artist.","danger");
 	}
